@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainActivity.MainActivity"
+    android:orientation="vertical">
+
+    <!--标题栏-->
+    <include layout="@layout/navigationbar" />
+    <!--FrameLayout-->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:background="@android:color/white"
+        android:layout_above="@+id/tab_bottom_bar"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></FrameLayout>
+    <View
+        android:layout_above="@+id/tab_bottom_bar"
+        android:background="#dee5e7"
+        android:layout_height="0.5dp"
+        android:layout_width="match_parent"></View>
+    <!--BottomNavigationView-->
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/tab_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom = "true"
+        android:background="#ffffff"
+        app:tl_iconHeight="20dp"
+        app:tl_iconWidth="20dp"
+        app:tl_indicator_color="@color/colorPrimary"
+        app:tl_indicator_height="0dp"
+        app:tl_textSelectColor="@color/colorPrimary"
+        app:tl_textUnselectColor="@color/foreLight"
+        app:tl_textsize="10sp"
+        app:tl_underline_color="@color/barFore"
+        app:tl_underline_height="1dp"/>
+</LinearLayout>

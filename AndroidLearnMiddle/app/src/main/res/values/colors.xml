@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/holo_blue_bright</color>
+    <color name="colorPrimaryDark">@android:color/holo_blue_bright</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="foreLight">#B3C1C6</color>
+    <color name="barFore">#FFFFFF</color>
+
+</resources>

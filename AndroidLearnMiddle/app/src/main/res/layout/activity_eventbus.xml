@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventBus.activities.eventBusActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/navigationbar" />
+    
+    <Button
+        android:id="@+id/eventBus_push"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="发送消息 B~A"/>
+    <Button
+        android:id="@+id/eventBus_post"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="发送粘性事件 A~B"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="接受数据内容："
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:id="@+id/eventbus_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        />
+
+</LinearLayout>

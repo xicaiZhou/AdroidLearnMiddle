@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="navBarTitleSize">20sp</dimen>
+    <dimen name="marginSize">16dp</dimen>
+
+
+</resources>
