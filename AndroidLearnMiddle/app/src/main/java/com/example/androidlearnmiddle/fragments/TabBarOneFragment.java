@@ -15,6 +15,7 @@ import android.widget.ListView;
 
 import com.example.androidlearnmiddle.EventBus.activities.eventBusActivity;
 import com.example.androidlearnmiddle.R;
+import com.example.androidlearnmiddle.RecycleView.activity.RecycleViewActivity;
 import com.example.androidlearnmiddle.base.BaseFragment;
 import com.example.androidlearnmiddle.mainActivity.adapter.mainAdapter;
 import com.example.androidlearnmiddle.mainActivity.model.myModel;
@@ -68,6 +69,7 @@ public class TabBarOneFragment extends BaseFragment{
         super.initData();
         data = new ArrayList<myModel>();
         data.add(new myModel("EventBus"));
+        data.add(new myModel("RecycleView"));
     }
 
     @Override
@@ -81,6 +83,9 @@ public class TabBarOneFragment extends BaseFragment{
                     case 0:
                         getActivity().startActivity(new Intent(getActivity(), eventBusActivity.class));
 
+                        break;
+                    case 1:
+                        getActivity().startActivity(new Intent(getActivity(), RecycleViewActivity.class));
                         break;
 
                 }

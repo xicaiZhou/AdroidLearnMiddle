@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecycleView.activity.RecycleViewActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/navigationbar" />
+
+
+    <Button
+        android:id="@+id/horizontal_rv"
+        android:text="横向"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <Button
+        android:id="@+id/vertical_rv"
+        android:text="纵向"
+        android:background="@android:color/holo_red_dark"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <Button
+        android:id="@+id/gride_rv"
+        android:text="网格"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <Button
+        android:id="@+id/staggered_rv"
+        android:text="瀑布流"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <Button
+        android:id="@+id/retrofit_rv"
+        android:text="带网络请求实战"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+</LinearLayout>

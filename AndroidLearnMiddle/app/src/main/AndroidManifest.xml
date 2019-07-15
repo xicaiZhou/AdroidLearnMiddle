@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EventBus.activities.eventBusSendActivity"></activity>
+        <activity android:name=".RecycleView.activity.RecycleStaggeredActivity"></activity>
+        <activity android:name=".RecycleView.activity.RecycleHorizontalActivity" />
+        <activity android:name=".RecycleView.activity.RecycleVerticalActivity" />
+        <activity android:name=".RecycleView.activity.RecycleRetrofitActivity" />
+        <activity android:name=".RecycleView.activity.RecycleGrideActivity" />
+        <activity android:name=".RecycleView.activity.RecycleViewActivity" />
+        <activity android:name=".EventBus.activities.eventBusSendActivity" />
         <activity android:name=".base.BaseActivity" />
         <activity android:name=".EventBus.activities.eventBusActivity" />
         <activity android:name=".mainActivity.MainActivity" />
