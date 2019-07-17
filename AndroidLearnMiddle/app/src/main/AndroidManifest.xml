@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.androidlearnmiddle">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,10 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RecycleView.activity.RecycleStaggeredActivity"></activity>
+        <activity android:name=".RecycleView.activity.RecycleAddAndDelActivity"></activity>
+        <activity android:name=".RecycleView.activity.RecycleDifferentHolderActivity" />
+        <activity android:name=".RecycleView.activity.RecycleStaggeredActivity" />
         <activity android:name=".RecycleView.activity.RecycleHorizontalActivity" />
         <activity android:name=".RecycleView.activity.RecycleVerticalActivity" />
-        <activity android:name=".RecycleView.activity.RecycleRetrofitActivity" />
         <activity android:name=".RecycleView.activity.RecycleGrideActivity" />
         <activity android:name=".RecycleView.activity.RecycleViewActivity" />
         <activity android:name=".EventBus.activities.eventBusSendActivity" />

@@ -24,9 +24,7 @@ public class RecycleViewActivity extends BaseActivity {
     }
     @OnClick(R.id.vertical_rv)
     public void vertical(View v){
-
         startActivity(new Intent(RecycleViewActivity.this, RecycleVerticalActivity.class));
-
     }
     @OnClick(R.id.horizontal_rv)
     public void horizontal(View v){
@@ -40,11 +38,13 @@ public class RecycleViewActivity extends BaseActivity {
     @OnClick(R.id.staggered_rv)
     public void staggered(View v){
         startActivity(new Intent(RecycleViewActivity.this, RecycleStaggeredActivity.class));
-
     }
     @OnClick(R.id.retrofit_rv)
     public void retrofit(View v){
-        startActivity(new Intent(RecycleViewActivity.this, RecycleRetrofitActivity.class));
-
+        startActivity(new Intent(RecycleViewActivity.this, RecycleDifferentHolderActivity.class));
+    }
+    @OnClick(R.id.AddAndDel_rv)
+    public void AddAndDel_rv(View V){
+        startActivity(new Intent(RecycleViewActivity.this,RecycleAddAndDelActivity.class));
     }
 }

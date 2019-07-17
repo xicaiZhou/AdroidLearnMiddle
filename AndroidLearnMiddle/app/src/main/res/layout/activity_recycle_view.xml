@@ -41,7 +41,15 @@
 
     <Button
         android:id="@+id/retrofit_rv"
-        android:text="带网络请求实战"
+        android:text="展示不同的ViewHolder"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+
+    <Button
+        android:id="@+id/AddAndDel_rv"
+        android:text="item的添加和删除"
         android:textSize="22sp"
         android:layout_width="match_parent"
         android:layout_height="60dp" />
