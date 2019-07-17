@@ -19,6 +19,7 @@ import com.example.androidlearnmiddle.RecycleView.activity.RecycleViewActivity;
 import com.example.androidlearnmiddle.base.BaseFragment;
 import com.example.androidlearnmiddle.mainActivity.adapter.mainAdapter;
 import com.example.androidlearnmiddle.mainActivity.model.myModel;
+import com.example.androidlearnmiddle.retrofit.RetrofitActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,6 +71,8 @@ public class TabBarOneFragment extends BaseFragment{
         data = new ArrayList<myModel>();
         data.add(new myModel("EventBus"));
         data.add(new myModel("RecycleView"));
+        data.add(new myModel("Retrofit"));
+
     }
 
     @Override
@@ -86,6 +89,9 @@ public class TabBarOneFragment extends BaseFragment{
                         break;
                     case 1:
                         getActivity().startActivity(new Intent(getActivity(), RecycleViewActivity.class));
+                        break;
+                    case 2:
+                        getActivity().startActivity(new Intent(getActivity(), RetrofitActivity.class));
                         break;
 
                 }
