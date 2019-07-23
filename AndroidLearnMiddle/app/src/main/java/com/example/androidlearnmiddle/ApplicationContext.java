@@ -3,6 +3,7 @@ package com.example.androidlearnmiddle;
 import android.app.Application;
 import android.content.Context;
 
+import com.example.androidlearnmiddle.other.easycache.EasyCacheManager;
 import com.example.androidlearnmiddle.retrofit.NetWorking.ApiClient;
 
 public class ApplicationContext extends Application {
@@ -31,6 +32,7 @@ public class ApplicationContext extends Application {
     public void onCreate() {
         super.onCreate();
         mApiClient = ApiClient.init();
+        EasyCacheManager.getInstance().setup(this);
     }
 
 }

@@ -19,7 +19,7 @@ public class Constant {
 //    public static final String API_URL = "http://rrdsit.viphk.ngrok.org/";
 
     //生产
-    public static final String API_URL = "http://huijiefinance.net/rrd/";
+    public static final String API_URL = "http://apis.juhe.cn/";
 
     public static final String DOWNLOAD_URL = "http://huijiefinance.net/zlhj/app/RRD/debug/Android/app-release.apk";
 

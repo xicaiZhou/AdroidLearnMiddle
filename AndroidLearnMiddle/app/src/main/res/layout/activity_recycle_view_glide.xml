@@ -3,16 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".retrofit.RetrofitActivity"
+    tools:context=".Glide.Activity.RecycleViewGlideActivity"
     android:orientation="vertical">
 
     <include layout="@layout/navigationbar"/>
 
-    <TextView
-        android:id="@+id/retrofit_tv"
-        android:text="aaaa"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/glide_recycleview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
 
+    </android.support.v7.widget.RecyclerView>
 
 </LinearLayout>

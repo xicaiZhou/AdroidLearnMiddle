@@ -1,10 +1,8 @@
 package com.example.androidlearnmiddle.other.easycache;
 
-import android.util.Log;
-
+import com.example.androidlearnmiddle.Utils.CLog;
 import com.google.gson.Gson;
 
-import fun.flyee.sunshine4u.android.utils.CLog;
 
 /**
  * Created by 37X21=777 on 15/9/23.

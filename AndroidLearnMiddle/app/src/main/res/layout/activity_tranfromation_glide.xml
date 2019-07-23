@@ -3,16 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".retrofit.RetrofitActivity"
+    tools:context=".Glide.Activity.TranfromationGlideActivity"
     android:orientation="vertical">
 
-    <include layout="@layout/navigationbar"/>
-
-    <TextView
-        android:id="@+id/retrofit_tv"
-        android:text="aaaa"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
 
 </LinearLayout>

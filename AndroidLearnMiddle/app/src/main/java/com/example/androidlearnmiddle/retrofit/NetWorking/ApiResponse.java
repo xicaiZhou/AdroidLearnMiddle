@@ -1,52 +1,46 @@
 package com.example.androidlearnmiddle.retrofit.NetWorking;
 
-import android.text.TextUtils;
-
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonParser;
 
-import org.json.JSONException;
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.example.androidlearnmiddle.retrofit.NetWorking.Util;
 /**
  * Created by ljy on 2018/3/16.
  */
 
 public class ApiResponse implements Serializable {
 
-    private String msg;
-    private int code;
-    private String data;
+    private String reason;
+    private int resultcode;
+    private String result;
     private Object object;
 
 
-    public String getMsg() {
-        return msg == null ? "" : msg;
+    public String getReason() {
+        return reason;
     }
 
-    public void setMsg(String msg) {
-        this.msg = msg;
+    public void setReason(String reason) {
+        this.reason = reason;
     }
 
-    public int getCode() {
-        return code;
+    public int getResultcode() {
+        return resultcode;
     }
 
-    public void setCode(int code) {
-        this.code = code;
+    public void setResultcode(int resultcode) {
+        this.resultcode = resultcode;
     }
 
-    public String getData() {
-        return data;
+    public String getResult() {
+        return result;
     }
 
-    public void setData(String data) {
-        this.data = data;
+    public void setResult(String result) {
+        this.result = result;
     }
 
     public Object getObject() {
@@ -68,9 +62,9 @@ public class ApiResponse implements Serializable {
      * @return
      */
     public <T> T getData(Class<T> clazz) {
-        if (data != null) {
+        if (result != null) {
             try {
-                return Util.getGson().fromJson(data, clazz);
+                return Util.getGson().fromJson(result, clazz);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -86,10 +80,10 @@ public class ApiResponse implements Serializable {
      * @return
      */
     public <T> T getData(Class<T> clazz, T defaultValue) {
-        if (data != null) {
+        if (result != null) {
             T t = null;
             try {
-                t = Util.getGson().fromJson(data, clazz);
+                t = Util.getGson().fromJson(result, clazz);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -108,12 +102,12 @@ public class ApiResponse implements Serializable {
      * @return
      */
     public <T> List<T> getDatas(Class<T> clazz) {
-        if (data == null) {
+        if (result == null) {
             return null;
         }
         Gson gson = Util.getGson();
         List<T> list = new ArrayList<>();
-        JsonArray array = new JsonParser().parse(data).getAsJsonArray();
+        JsonArray array = new JsonParser().parse(result).getAsJsonArray();
         for (int i = 0; i < array.size(); i++) {
             list.add(gson.fromJson(array.get(i), clazz));
         }

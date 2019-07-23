@@ -3,6 +3,19 @@
     package="com.example.androidlearnmiddle">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
         android:name=".ApplicationContext"
@@ -12,7 +25,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".retrofit.RetrofitActivity"></activity>
+        <activity
+            android:name=".Glide.Activity.TranfromationGlideActivity"
+            android:label="@string/title_activity_tranfromation_glide"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Glide.Activity.RecycleViewGlideActivity" />
+        <activity android:name=".Glide.Activity.BaseGlideActivity" />
+        <activity android:name=".Glide.Activity.GlideActivity" />
+        <activity android:name=".DataStored.DataStoredActivity" />
+        <activity android:name=".retrofit.RetrofitActivity" />
         <activity android:name=".RecycleView.activity.RecycleAddAndDelActivity" />
         <activity android:name=".RecycleView.activity.RecycleDifferentHolderActivity" />
         <activity android:name=".RecycleView.activity.RecycleStaggeredActivity" />

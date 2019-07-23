@@ -44,6 +44,7 @@ public class DifferentHolderAdapter extends RecyclerView.Adapter {
             ((DifferentHolerTwo)viewHolder).tv.setText("asdasda");
             ((DifferentHolerTwo)viewHolder).im.setImageResource(R.mipmap.ic_launcher);
 
+
         }
     }
 

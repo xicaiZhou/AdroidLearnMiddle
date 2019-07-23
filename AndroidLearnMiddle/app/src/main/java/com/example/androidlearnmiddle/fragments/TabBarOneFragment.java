@@ -1,19 +1,15 @@
 package com.example.androidlearnmiddle.fragments;
 
-import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.androidlearnmiddle.EventBus.activities.eventBusActivity;
+import com.example.androidlearnmiddle.Glide.Activity.GlideActivity;
 import com.example.androidlearnmiddle.R;
 import com.example.androidlearnmiddle.RecycleView.activity.RecycleViewActivity;
 import com.example.androidlearnmiddle.base.BaseFragment;
@@ -72,6 +68,8 @@ public class TabBarOneFragment extends BaseFragment{
         data.add(new myModel("EventBus"));
         data.add(new myModel("RecycleView"));
         data.add(new myModel("Retrofit"));
+        data.add(new myModel("Glide"));
+
 
     }
 
@@ -92,6 +90,9 @@ public class TabBarOneFragment extends BaseFragment{
                         break;
                     case 2:
                         getActivity().startActivity(new Intent(getActivity(), RetrofitActivity.class));
+                        break;
+                    case 3:
+                        getActivity().startActivity(new Intent(getActivity(), GlideActivity.class));
                         break;
 
                 }

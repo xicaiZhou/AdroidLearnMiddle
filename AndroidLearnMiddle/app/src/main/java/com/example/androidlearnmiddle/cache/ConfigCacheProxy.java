@@ -1,9 +1,10 @@
 package com.example.androidlearnmiddle.cache;
 
-import com.stormagain.easycache.Cache;
-import com.stormagain.easycache.EasySpCache;
-import com.stormagain.easycache.Key;
-import com.stormagain.easycache.LoadCache;
+
+import com.example.androidlearnmiddle.other.easycache.Cache;
+import com.example.androidlearnmiddle.other.easycache.EasySpCache;
+import com.example.androidlearnmiddle.other.easycache.Key;
+import com.example.androidlearnmiddle.other.easycache.LoadCache;
 
 /**
  * SharePreference封装类EasyCache的代理接口

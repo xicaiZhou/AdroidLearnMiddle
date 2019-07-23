@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Glide.Activity.GlideActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/navigationbar"/>
+
+    <Button
+        android:id="@+id/base_glide"
+        android:text="Glide的基础用法"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <Button
+        android:id="@+id/RecycleView_glide"
+        android:text="RecycleView加载网络图片"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <Button
+        android:id="@+id/tranfromation_glide"
+        android:text="图片变换"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+</LinearLayout>

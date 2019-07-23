@@ -1,15 +1,11 @@
 package com.example.androidlearnmiddle.retrofit.NetWorking;
 
-import android.text.TextUtils;
-
 import com.example.androidlearnmiddle.Utils.CLog;
 
 import java.io.EOFException;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import okhttp3.Connection;
 import okhttp3.Headers;
@@ -198,3 +194,4 @@ public class LogInterceptor implements Interceptor {
     private static int LOG_MAXLENGTH = 2000;
 
 }
+

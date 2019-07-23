@@ -21,6 +21,7 @@ public class ApiClient {
         client.mRetrofit = client.provideRetrofit(client.mClient, Constant.API_URL);
         return client;
     }
+
     private OkHttpClient provideOkHttpClient() {
         LogInterceptor loggingInterceptor = new LogInterceptor();
         OkHttpClient okhttpClient = new OkHttpClient.Builder()
@@ -51,8 +52,6 @@ public class ApiClient {
     }
 
     public static ApiService api(){
-
         return ApplicationContext.getContext().getApiClient().provideApiService();
     }
-
 }
